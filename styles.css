@@ -1,0 +1,65 @@
+html {
+    font-family: "Onest", sans-serif;
+    font-size: 16px;
+    --white: #fffbfb;
+    --grey: #f0eef1;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+h1 {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.bookshelf {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.books {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 300px;
+}
+
+.books > * {
+    margin: 0.25rem 0.5rem;
+}
+
+.page-count {
+    margin-top: 0.1rem;
+    font-size: 0.8rem;
+}
+
+button {
+    margin: 0.5rem 0;
+    min-width: 35%;
+    padding: 0.2rem 0;
+}
+
+.buttons-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
